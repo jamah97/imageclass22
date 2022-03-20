@@ -18,7 +18,7 @@ st.write(""" About the data: This data was initially published on https://dataha
 
 Content
 
-This Data contains around 25k images of size 150x150 distributed under 6 categories(Building, Forest, Glacier, Mountain, Sea, Street)""")
+The training data contains around 17k images and the testing data contains around 6k images both of size 150x150 distributed under 6 categories(Building, Forest, Glacier, Mountain, Sea, Street)""")
 st.write(""" Algorithm used: InceptionV3 with layers freezed during training so that the weights don't change during backpropagation.
 Mixed_7 as the last layer of InceptionV3 pre-train model. Followed by adding a fully dense layer of 256, then a dropout of rate of .2, then a final dense layer of 6 for the 6 different classes with softmax as the activation function.
 The model reach a validation accuracy of 91.6% and a validation loss of .3105 after 20 epochs of training.""")
